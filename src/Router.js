@@ -26,7 +26,7 @@ const Router = () => {
                     name="ProductsPage"
                     component={Products}
                     options={{
-                        title: 'Dükkan',
+                        title: 'Meals',
                         headerTitleAlign: 'center',
                         headerTitleStyle: { color: '#ffa000' },
                         headerTintColor: '#ffa000',

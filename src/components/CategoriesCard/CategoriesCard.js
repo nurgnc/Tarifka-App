@@ -2,7 +2,6 @@ import React from 'react'
 import { StyleSheet, Text, View, Image, TouchableWithoutFeedback } from 'react-native'
 
 const CategoriesCard = ({ category, onSelect }) => {
-    console.log(category)
     return (
         <TouchableWithoutFeedback onPress={onSelect}>
             <View style={styles.container}>
@@ -40,5 +39,11 @@ const styles = StyleSheet.create({
         width:100,
         height:100,
         resizeMode:"contain",
+    },
+    titleContainer: { 
+        marginHorizontal: 10,
+    },
+    title: { 
+        fontSize: 20,
     }
 })

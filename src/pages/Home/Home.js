@@ -10,7 +10,7 @@ const Home = ({ navigation }) => {
     const { loading, data, error } = useFetch(`${API_CATEGORY}`)
 
     const handleCategories = (strCategory) => {
-        navigation.navigate("DetailPage", { strCategory })
+        navigation.navigate("ProductsPage", { strCategory })
     };
 
     const renderCategories = ({ item }) => (<CategoriesCard category={item} onSelect={() => handleCategories(item.strCategory)} />);
